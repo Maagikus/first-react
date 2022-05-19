@@ -1,19 +1,13 @@
-import React from 'react';
+import React,{StrictMode} from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
-
-const text = 'Hello World';
+import App from './Components/app/app';
 const root = ReactDOM.createRoot(document.getElementById('root'));
-const elem = (
-  <div>
-    <h2 className='text'>{text}</h2>
-    <input type="text" name="" id="" />
-    <button>Click</button>
-  </div>
-);
+
 root.render(
-elem,
+  <StrictMode>
+    <App/>
+  </StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
